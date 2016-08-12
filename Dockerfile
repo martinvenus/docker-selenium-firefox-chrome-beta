@@ -1,9 +1,9 @@
-FROM ubuntu:trusty
+FROM ubuntu:xenial
 ENV LC_ALL C
 ENV DEBIAN_FRONTEND noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN true
 
-MAINTAINER Vincent Voyer <vincent@zeroload.net>
+MAINTAINER Martin Venuš <martin.venus@gmail.com>
 RUN apt-get -y update
 RUN apt-get install -y -q software-properties-common wget
 RUN add-apt-repository -y ppa:mozillateam/firefox-next
